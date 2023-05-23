@@ -1,0 +1,118 @@
+:root{
+  --pale-blue:hsl(225,100%,94%);
+  --bright-blue:hsl(245,75%,52%);
+  --very-pale-blue:hsl(225,100%,98%);
+  --desaturated-blue:hsl(224,23%,55%);
+  --dark-blue:hsl(223,47%,23%);
+}
+
+*{
+  margin:0;
+  padding:0; 
+}
+
+body{
+  background:url('assets/pattern-background-desktop.svg'),var(--pale-blue);
+  background-size:contain;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  font-family:'Red Hat Display';
+
+}
+
+.container{
+  max-width:350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:50px 0;
+  background:white;
+  gap:1rem;
+  overflow:hidden;
+  box-shadow: 0 15px 25px 0 hsl(245,75%,52%,.11);
+}
+.banner{
+  width:100%;
+  height:auto;
+  margin-bottom:0;
+}
+.summary{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  
+}
+.summary .title{
+  color:var(--dark-blue);
+  font-weight: 900;
+}
+.summary p{
+  color:var(--desaturated-blue);
+  margin:10px auto;
+  text-align:center;
+  margin:10px;
+  font-size: 16px;
+  padding-top:1em;
+}
+.plan-box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+  padding:1rem;
+  width:75%;
+  background:var(--very-pale-blue);
+  border-radius:10px;
+}
+.plan-box .plan-icon{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap:.5rem;
+}
+.plan-box .plan-icon .plan-details .plan-name{
+  color:var(--dark-blue);
+}
+.plan-box .plan-icon .price{
+  color:var(--desaturated-blue);
+  font-size: 16px;
+}
+.plan-box a{
+  color:var(--bright-blue);
+  font-weight:700;
+}
+
+.btn{
+  width:80%;
+  margin:10px 0px;
+  padding:10px;
+  border-radius:5px;
+  background:var(--bright-blue);
+  border:none;
+  box-shadow:0px 15px 20px 0 hsla(245,75%,52%,.25);
+  color:white;
+  opacity:1;
+  transition:all .2s ease;
+  font-weight: 700;
+  cursor:pointer;
+}
+
+.cancel{
+  text-decoration:none;
+  margin-bottom:35px;
+  color:var(--desaturated-blue);
+}
+
+.btn:hover{
+  opacity:.8;
+}
+
+.cancel{
+  color:
+}
